@@ -76,23 +76,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     }
 
-    // Initialize gallery for both project cards and project pages
+    // Initialize gallery for project pages only
     function initializeGallery() {
-        // Get all images from project cards and project pages
-        const projectCardImages = Array.from(document.querySelectorAll('.project-card img'));
+        // Get only project page images
         const projectPageImages = Array.from(document.querySelectorAll('.project-images img'));
         
-        modalImages = [...projectCardImages, ...projectPageImages].map(img => img.src);
+        modalImages = projectPageImages.map(img => img.src);
         currentImageIndex = 0;
-
-        // Make project card images clickable
-        projectCardImages.forEach(img => {
-            img.style.cursor = 'zoom-in';
-            img.addEventListener('click', () => {
-                currentImageIndex = modalImages.indexOf(img.src);
-                openModal(img.src);
-            });
-        });
 
         // Make project page images clickable
         projectPageImages.forEach(img => {
