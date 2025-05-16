@@ -1,0 +1,363 @@
+/* General Styles */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff !important;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+    background-color: #181a1b;
+}
+
+
+/* Max-width for main content areas for better readability on large screens */
+.hero,
+main,
+footer {
+    max-width: 1200px; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+    /* The existing padding on these elements (e.g., padding: 2rem or padding: 4rem 2rem) */
+    /* will now apply within this max-width container. */
+    /* This ensures content doesn't touch the edges of the 1200px box. */
+}
+
+a {
+    color: #6ea8fe;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #23272a;
+    background: #23272a;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-home {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #6ea8fe;
+    background: #23272a;
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem 0.3rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #333a;
+    transition: background 0.2s, color 0.2s;
+}
+
+.back-home:hover {
+    background: #181a1b;
+    color: #fff;
+    text-decoration: underline;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; /* As per image */
+}
+
+header nav a {
+    margin-left: 1.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Hero Section */
+
+.hero-impact {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #23272a 70%, #181a1b 100%);
+    padding: 5rem 2rem 3rem 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+}
+
+.hero-bg-gif {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.28;
+    pointer-events: none;
+    filter: blur(1px) grayscale(0.2) brightness(0.6);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(120deg, #181a1bbd 60%, #23272aee 100%);
+    z-index: 2;
+}
+
+.hero-impact h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.18;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 24px #000, 0 2px 8px #222, 0 0 2px #fff;
+    filter: brightness(1.2) contrast(1.4);
+}
+
+@media (max-width: 600px) {
+    .hero-impact {
+        padding: 3rem 1rem 2rem 1rem;
+        min-height: 180px;
+    }
+    .hero-impact h1 {
+        font-size: 1.5rem;
+    }
+}
+    min-height: 500px;
+    padding: 4rem 2rem;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: #23272a;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background: #23272a;
+    border-radius: 8px;
+}
+
+.profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #0033cc; /* Optional: adds a border matching hero h1 color */
+    flex-shrink: 0; /* Prevents the image from shrinking if text is long */
+}
+
+.about-me-content {
+    flex-grow: 1; /* Allows text content to take remaining space */
+}
+
+.about-me-content h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.about-me-content p {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 1rem;
+}
+
+.about-me-content .read-more {
+    color: #0033cc;
+    font-weight: bold;
+}
+
+/* Main Content - Gallery */
+main {
+    padding: 2rem;
+    background: #181a1b;
+}
+
+/* Prototype Demo Section */
+.prototype-demo {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.prototype-demo .caption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.gallery .subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #23272a;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333a;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    background-color: #f0f0f0; /* Placeholder background for images */
+}
+
+.project-card h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 1rem 1rem 0.5rem 1rem;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    margin: 0 1rem 1rem 1rem;
+    line-height: 1.4;
+}
+
+.project-card a {
+    display: inline-block;
+    margin: 0 1rem 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #6ea8fe;
+    color: #181a1b;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.project-card a:hover {
+    background-color: #fff;
+    color: #181a1b;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #23272a;
+    color: #f1f1f1;
+    /* border-top: 1px solid #23272a; */
+}
+
+footer h2 {
+    font-size: 2.8rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header .logo {
+        margin-bottom: 0.5rem;
+    }
+
+    header nav a {
+        margin: 0.5rem 0.5rem;
+        display: block;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .gallery h2 {
+        font-size: 2rem;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.tag {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.9em;
+    color: #333;
+}
