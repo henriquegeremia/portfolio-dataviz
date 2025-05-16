@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omni Platform Demo - Henrique Geremia Nievinski</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../js/gallery.js" defer></script>
+    <style>
+        .project-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .project-content p {
+            max-width: 65ch;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .project-header {
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .project-images img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-images img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .back-link {
+            display: inline-block;
+            margin: 2rem 0;
+            color: #6ea8fe;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-content">
+        <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+        
+        <div class="project-header">
+            <h1>Embedded Analytics Demo for Omni Platform</h1>
+            <div class="project-tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">BI Consulting</span>
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+
+        <section>
+            <h2>Project Overview</h2>
+            <p>A collaborative initiative with Shearwater, Omni (San Francisco), and Cluster (Brazil) to create a comprehensive prototype that demonstrates Omni's embedded analytics capabilities. As the lead on this project, I was responsible for multiple aspects of development and implementation.</p>
+        </section>
+
+        <section>
+            <h2>Key Responsibilities</h2>
+            <ul>
+                <li>Led the discovery phase to understand client requirements and technical constraints</li>
+                <li>Created interactive prototypes to visualize the embedded analytics solution</li>
+                <li>Designed and implemented data visualizations that effectively communicate insights</li>
+                <li>Developed front-end components to seamlessly integrate analytics into the platform</li>
+            </ul>
+        </section>
+
+        <div class="project-images">
+            <img src="Shearwater.png" alt="Shearwater Analytics Dashboard">
+            <img src="Shearwater_-_Google_Chrome_chrome_TJMBlddJuA.gif" alt="Dashboard Navigation Demo">
+        </div>
+
+        <section>
+            <h2>Technical Details</h2>
+            <p>The project leveraged modern web technologies and best practices in embedded analytics to create an intuitive and powerful data visualization solution. The implementation focused on seamless integration, performance optimization, and user experience.</p>
+        </section>
+
+        <a href="../../index.html" class="back-link">← Back to Portfolio</a>
+    </div>
+</body>
+</html>
